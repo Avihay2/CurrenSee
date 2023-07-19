@@ -1,0 +1,22 @@
+.terms-checkbox {
+  display: inline;
+  vertical-align: middle;
+}
+
+.terms-checkbox:hover {
+  cursor: pointer;
+}
+
+.terms-text {
+  display: inline;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Small screen */
+@media screen and (max-width: 767px) {
+  .terms-text {
+    font-size: 13px;
+  }
+}

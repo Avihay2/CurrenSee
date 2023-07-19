@@ -1,0 +1,93 @@
+.side-button-container {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 350px;
+
+  width: 20px;
+  height: 230px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto 0;
+  background-color: var(--clr-white);
+  box-shadow: var(--light-grey-shadow);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.side-button-container:hover {
+  left: 360px;
+  cursor: pointer;
+}
+
+.side-button-container.closed {
+  left: -5px;
+}
+
+.side-button-container.closed:hover {
+  left: 0;
+}
+
+/* Large screen */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .side-button-container {
+    left: 300px;
+  }
+
+  .side-button-container:hover {
+    left: 310px;
+  }
+}
+
+/* Medium screen */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .side-button-container {
+    left: 275px;
+  }
+
+  .side-button-container:hover {
+    left: 285px;
+  }
+}
+
+/* Small screen */
+@media screen and (max-width: 767px) {
+  .side-button-container {
+    top: auto;
+    bottom: calc((var(--inner-height) * 0.9) + 10px);
+    left: 20vw;
+
+    width: 60vw;
+    height: 20px;
+  }
+
+  .side-button-container:hover {
+    bottom: calc((var(--inner-height) * 0.9) + 20px);
+    left: 20vw;
+  }
+
+  .side-button-container.closed {
+    left: 20vw;
+    bottom: -5px;
+  }
+
+  .side-button-container.closed:hover {
+    left: 20vw;
+    bottom: 0;
+  }
+}
+
+/* Small screen & small viewport height */
+@media screen and (max-width: 767px) and (max-height: 454px) {
+  .side-button-container {
+    bottom: calc(var(--inner-height) * 0.9);
+  }
+
+  .side-button-container:hover {
+    bottom: calc((var(--inner-height) * 0.9) + 10px);
+  }
+}

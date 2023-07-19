@@ -1,0 +1,61 @@
+.dropdown-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.currency-input {
+  width: 180px;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.currency-input::placeholder {
+  color: var(--clr-black);
+  opacity: 0.5;
+}
+
+.dropdown {
+  position: absolute;
+  top: 105%;
+  z-index: 3;
+  width: 100%;
+  max-height: 180px;
+  background-color: var(--clr-white);
+  box-shadow: var(--dark-grey-shadow);
+  overflow-y: auto;
+}
+
+.dropdown li:hover {
+  background-color: var(--clr-grey-10);
+}
+
+.fade-in {
+  animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fade-out 0.2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}

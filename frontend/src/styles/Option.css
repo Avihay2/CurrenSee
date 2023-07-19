@@ -1,0 +1,15 @@
+.option-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5px 0;
+  padding: 13px 10px 13px 15px;
+  background-color: var(--clr-grey-light-2);
+  border-radius: 6px;
+}
+
+.option-container:hover {
+  background-color: var(--clr-grey-light-1);
+  cursor: pointer;
+}

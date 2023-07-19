@@ -1,0 +1,101 @@
+.select-currency-container.relative-currency {
+  width: 75%;
+}
+
+.rate-span {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+/* Small screen */
+@media screen and (max-width: 767px) {
+  .select-currency-container.relative-currency {
+    margin: 20px auto;
+  }
+}
+
+/* Medium screen & small viewport height */
+@media screen and (min-width: 768px) and (max-height: 745px) {
+  .select-currency-container.relative-currency:nth-child(4) .dropdown {
+    max-height: 135px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 647px) and (min-height: 581px) {
+  .select-currency-container.relative-currency:nth-child(4) .dropdown {
+    max-height: 95px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 580px) {
+  .select-currency-container.relative-currency:nth-child(3) .dropdown {
+    max-height: 135px;
+  }
+
+  .select-currency-container.relative-currency:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 480px) and (min-height: 441px) {
+  .select-currency-container.relative-currency:nth-child(3) .dropdown {
+    max-height: 95px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 440px) {
+  .select-currency-container.relative-currency:nth-child(2) .dropdown {
+    max-height: 135px;
+  }
+
+  .select-currency-container.relative-currency:nth-child(3) {
+    display: none;
+  }
+}
+
+/* Small Screen & small viewport height */
+@media screen and (max-width: 767px) and (max-height: 647px) {
+  .select-currency-container.relative-currency:nth-child(4) .dropdown {
+    max-height: 135px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 613px) {
+  .select-currency-container.relative-currency:nth-child(4) .dropdown {
+    max-height: 95px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 570px) {
+  .select-currency-container.relative-currency:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 545px) {
+  .select-currency-container.relative-currency:nth-child(3) .dropdown {
+    max-height: 135px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 500px) {
+  .select-currency-container.relative-currency:nth-child(3) .dropdown {
+    max-height: 95px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 455px) {
+  .select-currency-container.relative-currency:nth-child(2) .dropdown {
+    max-height: 135px;
+  }
+
+  .select-currency-container.relative-currency:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 395px) {
+  .select-currency-container.relative-currency:nth-child(2) .dropdown {
+    max-height: 95px;
+  }
+}

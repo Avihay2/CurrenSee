@@ -1,0 +1,116 @@
+:root {
+  --inner-height: 100vh;
+
+  --clr-primary-1: rgb(6, 30, 81);
+  --clr-primary-2: rgb(16, 49, 122);
+  --clr-primary-3: rgb(26, 69, 162);
+  --clr-primary-4: rgb(47, 95, 198);
+
+  /* primary/main color  */
+  --clr-primary-5: rgb(31, 102, 255);
+
+  --clr-primary-6: rgb(66, 123, 245);
+  --clr-primary-7: rgb(139, 174, 249);
+  --clr-primary-8: rgb(165, 191, 248);
+  --clr-primary-9: rgb(197, 214, 252);
+  --clr-primary-10: rgb(235, 241, 255);
+
+  --clr-grey-1: rgb(16, 42, 66);
+  --clr-grey-2: rgb(36, 58, 82);
+  --clr-grey-3: rgb(50, 77, 103);
+  --clr-grey-4: rgb(72, 100, 127);
+  --clr-grey-5: rgb(97, 125, 152);
+  --clr-grey-6: rgb(130, 154, 176);
+  --clr-grey-7: rgb(158, 178, 199);
+  --clr-grey-8: rgb(188, 204, 220);
+  --clr-grey-9: rgb(218, 226, 236);
+  --clr-grey-10: rgb(241, 245, 248);
+
+  --clr-grey-light-1: rgba(255, 253, 250, 0.75);
+  --clr-grey-light-2: rgba(255, 253, 250, 0.45);
+  --clr-grey-light-3: rgba(235, 235, 235, 0.55);
+
+  --clr-red: rgb(240, 0, 5);
+
+  --clr-white: rgb(255, 253, 250);
+  --clr-black: rgb(34, 34, 34);
+
+  --clr-map-bg: rgb(245, 248, 255);
+  --clr-map-state: rgb(216, 216, 216);
+  --clr-map-border: rgb(255, 253, 250);
+
+  --clr-btn-filled: rgb(31, 102, 255);
+  --clr-btn-filled-hover: rgb(66, 123, 245);
+  --clr-btn-empty: rgb(225, 225, 225);
+  --clr-btn-empty-hover: rgb(205, 205, 205);
+
+  --ultra-light-grey-shadow: 2px 1px 8px rgb(216, 216, 216);
+  --light-grey-shadow: 2px 1px 8px rgb(202, 202, 202);
+  --dark-grey-shadow: 2px 4px 8px rgb(182, 182, 182);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body.dark-mode {
+  --clr-primary-5: rgb(41, 95, 211);
+  --clr-primary-9: rgba(139, 167, 226, 0.25);
+  --clr-grey-10: rgb(56, 61, 69);
+
+  --clr-red: rgb(228, 0, 4);
+
+  --clr-grey-light-1: rgba(25, 28, 34, 0.7);
+  --clr-grey-light-2: rgba(25, 28, 34, 0.45);
+  --clr-grey-light-3: rgba(25, 28, 34, 0.3);
+
+  --clr-white: rgb(35, 38, 44);
+  --clr-black: var(--clr-grey-9);
+
+  --clr-map-bg: rgb(56, 61, 69);
+  --clr-map-state: rgb(35, 38, 44);
+  --clr-map-border: rgb(71, 79, 89);
+
+  --clr-btn-filled: rgb(41, 95, 211);
+  --clr-btn-filled-hover: rgb(45, 109, 255);
+  --clr-btn-empty: rgb(53, 57, 65);
+  --clr-btn-empty-hover: rgb(45, 50, 58);
+
+  --ultra-light-grey-shadow: 1px 1px 4px rgb(60, 60, 60);
+  --light-grey-shadow: 2px 1px 8px rgb(50, 50, 50);
+  --dark-grey-shadow: 2px 4px 8px rgb(40, 40, 40);
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}

@@ -1,0 +1,75 @@
+.leaflet-container {
+  z-index: 1;
+}
+
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper {
+  background-color: var(--clr-white);
+}
+
+.leaflet-popup-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  min-height: 125px;
+  overflow-y: auto;
+}
+
+.leaflet-popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  color: var(--clr-black);
+}
+
+.leaflet-bar a {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.leaflet-bar a:hover {
+  background-color: var(--clr-grey-10);
+}
+
+.rect-flag {
+  font-size: 35px;
+  margin-bottom: 5px;
+  box-shadow: var(--light-grey-shadow);
+}
+
+.country-name {
+  font-weight: bold;
+}
+
+.currency-name {
+  font-size: 11px;
+}
+
+.leaflet-popup-content .rate-span {
+  font-size: 13px;
+  margin-right: 2px;
+}
+
+/* Small screen */
+@media screen and (max-width: 767px) {
+  .leaflet-popup-content-wrapper {
+    width: 100px;
+  }
+
+  .rect-flag {
+    font-size: 30px;
+  }
+
+  .country-name,
+  .leaflet-popup-content .rate-span,
+  .leaflet-popup-content .currency-symbol {
+    font-size: 12px;
+  }
+
+  .currency-name {
+    font-size: 10px;
+  }
+}

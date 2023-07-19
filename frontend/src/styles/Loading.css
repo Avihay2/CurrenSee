@@ -1,0 +1,30 @@
+.loading-container {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(31, 102, 255, 0.2);
+  border-top: 2px solid var(--clr-primary-5);
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .loading-container {
+    top: 10px;
+    right: 10px;
+    border: 2px solid rgba(255, 253, 250, 0.2);
+    border-top: 2px solid var(--clr-white);
+  }
+}
